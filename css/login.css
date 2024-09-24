@@ -51,7 +51,7 @@ span{
 /*Celular*/
 @media(min-width:320px) and (max-width:500px) {
     a.link-nav {
-        font-size: 1em;
+        font-size: 0.8em;
         margin: 0px 10px;
     }
     #logo {
