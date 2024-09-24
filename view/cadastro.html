@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
+    <script src="../script/cadastro.js"></script>
 </head>
 
     <header>
@@ -18,10 +19,53 @@
         <div class="menu">
             <nav>
                 <a href="login.html" class="link-nav">Sou aluno</a>
-                <a href="cadastro.html" class="link-nav" target="_blank" class="link-nav">Me matricular</a>
+                <a href="cadastro.html" class="link-nav" target="_blank" id="clicado" >Me matricular</a>
             </nav>
         </div>
     </header> 
+
+    <main>
+        <h1 id="titulo">Me matricular</h1>
+
+        <form>
+
+            <div class="campo">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+            </div>
+
+            <div class="campo">
+                <label for="cpf/cnpj">CPF/CNPJ</label>
+                <input type="text" name="cpf/cnpj" id="cpf/cnpj">
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="text" name="senha" id="senha">
+            </div>
+
+            <div class="campo">
+                <label for="confirmar_senha">Confirmar Senha</label>
+                <input type="text" name="confirmar_senha"  id="conf_senha">
+            </div>
+
+            <div class="campo">
+                <label for="terms" id="label_check">Termos</label>
+                <input type="checkbox" name="terms"  id="terms">
+            </div>
+
+            <button id="botao">Cadastrar</button>
+
+            <p id="resposta"></p>
+
+        </form>
+
+    </main>
 
 </body>
 </html>

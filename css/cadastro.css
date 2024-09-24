@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body{
     background-color: white;
     margin: 0;
@@ -8,7 +12,6 @@ body{
 
 
 header{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex; /* fica flexivel na horizontal*/
     align-items: center; /* centraliza os itens verticalmente */
     justify-content: space-between; /*coloca espaço entre os itens do menu */
@@ -36,6 +39,12 @@ a.link-nav:hover {
     transition: 0.3s;
 }
 
+#clicado {
+    background-color: #CA0404;
+    color: white;
+    transition: 0.3s;
+}
+
 .menu{
     display: flex;
     justify-content: flex-end;
@@ -44,8 +53,52 @@ a.link-nav:hover {
     padding: 10px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    margin: auto;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px rgba(143, 143, 143, 0.441);
+}
+
+.campo {
+    margin: 10px auto;
+}
+
 span{
     color: #CA0404;
+}
+#titulo {
+    text-align: center;
+}
+label {
+    display: block;
+}
+#label_check {
+    display: inline;
+}
+input[type='checkbox'] {
+    position: relative;
+    bottom: -4px;
+}
+#botao {
+    border: 1px solid;
+    width: 80px;
+    margin: auto;
+    border-radius: 5px;
+}
+#botao:hover {
+    transition: 0.3s;
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 3px rgb(110, 110, 110);
+}
+#botao:active {
+    border-color:  #ff0000;
+    transition: 0.3s;
+    transform: translateY(3px);
 }
 
 /*Celular*/
@@ -59,6 +112,11 @@ span{
     }
     #marca {
         font-size: 1em;
+    }
+    #titulo{
+
+    }
+    form {
     }
 }
 
@@ -74,7 +132,11 @@ span{
     #marca {
         font-size: 1.2em;
     }
-
+    #titulo{
+        
+    }
+    form {
+    }
 }
 
 /*Desktop menor*/
@@ -88,6 +150,11 @@ span{
     }
     #marca {
         font-size: 1.5em;
+    }
+    #titulo{
+        
+    }
+    form {
     }
 }
 
@@ -104,5 +171,9 @@ span{
     #marca {
         font-size: 2em;
     }
-
+    #titulo{
+        
+    }
+    form {
+    }
 }

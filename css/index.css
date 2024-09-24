@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 body{
     background-color: white;
     margin: 0;
@@ -8,7 +12,6 @@ body{
 
 
 header{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex; /* fica flexivel na horizontal*/
     align-items: center; /* centraliza os itens verticalmente */
     justify-content: space-between; /*coloca espaço entre os itens do menu */
