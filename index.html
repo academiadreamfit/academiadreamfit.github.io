@@ -1,25 +1,114 @@
-<html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" type="text/css" href="css/index.css" media="screen" />
-    </head>
-    <body>
-        <div class="container">
-            <header>
-                <a href="">Logo</a>
-                <ul>
-                    <li><a href="./view/cadastro.html">Cadastro</li></a> 
-                    <li>Login</li>
-                </ul>
-            </header>
-            <main></main>
-            <aside>
-                <div style="background-color: aqua;">A</div>
-                <div style="background-color: bisque;">B</div>
-                <div style="background-color: blueviolet;">C</div>
-                <div style="background-color: coral;">D</div>
-            </aside>
-            <footer></footer>
-        </div>        
-    </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SynergyFit</title>
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="script/index.js"></script>
+</head>
+<body>
+    <header>
+
+        <a href="index.html">
+            <img src="img/fortee.webp" id="logo">
+        </a>
+    
+        <h1 style="line-height: 1;" id="marca">SynergyFit <br><span>Academia</span></h1>
+    
+        <div class="menu">
+            <nav>
+                <a href="view/login.html" class="link-nav">Sou aluno</a>
+                <a href="view/cadastro.html" class="link-nav" target="_blank" class="link-nav">Quero me matricular</a>
+            </nav>
+        </div>
+    </header> 
+
+
+    <h1 id="proxima">Encontre sua academia mais próxima!</h1>
+
+    <div class="barra">
+        <input type="text" placeholder="Encontre sua SynergyFit..." id="input_index">
+        <button id="botao_index">
+            <img src="img/lupa.png" width="30px">
+        </button>
+    </div>
+
+    <div id="aca-img">
+        <img src="img/imagem1.jpg" id="imagem_academia">
+    </div>
+
+        
+    <div id="planos">
+        <h1 id="planos_synergyfit">Planos SynergyFit</h1>
+        <h2 id="titulo_planos">Treine onde e como quiser com nossos <br> <span id="span_planos"> planos acessíveis e exclusivos!</span></h2>
+    </div>
+    
+    <section>
+        <div class="plan">
+
+            <h1 class="tipo_plano">Plano Básico</h1>
+            <p>Plano mais acessível, ideal para quem quer começar a se exercitar sem gastar muito e sem a necessidade de usar várias unidades ou utilizar serviços extras.</p>
+            <h2 class="descricao">Descrição:</h2>
+            <ul type="circle">
+                <li>Acesso às instalações da academia</li>
+                <li>Aulas de grupo(limitadas a 2 por semana) </li>
+                <li>Acesso a materiais educativos online</li>
+            </ul>
+
+            <div class="preço">
+                <p>A partir de:</p>
+                <p><strong>R$ 89,90/mês</strong></p>
+            </div>
+
+        </div>
+
+        <div class="plan">
+
+            <h1 class="tipo_plano">Plano Avançado</h1>
+            <p>Este plano oferece mais beneficios e flexibilidade em relação ao uso das unidades e serviços adicionais, ideal para quem busca uma experência mais completa.</p>
+            <h2 class="descricao">Descrição:</h2>
+            
+            <ul type="circle">
+
+                <li>Todos os benefícios do Plano Báasico</li>
+                <li>Acesso a treinos personalizados</li>
+                <li>Participação em workshops de nutrição</li>
+
+            </ul>
+
+            <div class="preço">
+
+                <p>A partir de:</p>
+                <p><strong>R$ 129,90/mês</strong></p>
+
+            </div>
+
+        </div>
+        
+        <div class="plan">
+
+            <h1 class="tipo_plano">Plano Premium</h1>
+            <p>Este é o plano mais completo, com acesso VIP e uma série de vantagens exclusivas, ideal para quem quer a máxima flexibilidade e serviçoes de alto nível.</p>
+            <h2 class="descricao">Descrição:</h2>
+
+            <ul type="circle">
+                <li>Todos os benefícios do Plano avançado</li>
+                <li>Acompanhamento mensal com personal trainer</li>
+                <li>Cadeira de massagem</li>
+                <li>Acesso a outras academia da rede</li>
+            </ul>
+
+            <div class="preço">
+                <p>A partir de:</p>
+                <p><strong>R$ 189,90/mês</strong></p>
+
+            </div>
+
+        </div>
+        
+    </section>
+
+</body>
 </html>

@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+body{
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex; /* fica flexivel na horizontal*/
+    align-items: center; /* centraliza os itens verticalmente */
+    justify-content: space-between; /*coloca espaço entre os itens do menu */
+    padding: 35px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom, gray, white);
+    text-decoration: none; /* elimina a linha(sublinhado) embaixo do link */
+   
+}
+
+a.link-nav {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+a.link-nav:hover {
+    background-color: #CA0404;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    flex-grow: 1; /* itens crescerem igualmente dentro daquele espaço */
+    padding: 10px;
+}
+
+span{
+    color: #CA0404;
+}
+
+/*Celular*/
+@media(min-width:320px) and (max-width:500px) {
+    a.link-nav {
+        font-size: 1em;
+        margin: 0px 10px;
+    }
+    #logo {
+        width: 40px;
+    }
+    #marca {
+        font-size: 1em;
+    }
+}
+
+/*Tablet*/
+@media(min-width:501px) and (max-width:767px) {
+    a.link-nav {
+        font-size: 1.2em;
+        margin: 0px 16px;
+    }
+    #logo {
+        width: 100px;
+    }
+    #marca {
+        font-size: 1.2em;
+    }
+
+}
+
+/*Desktop menor*/
+@media(min-width:767px) and (max-width:1440px) {
+    a.link-nav {
+        font-size: 1.5em;
+        margin: 0px 20px;
+    }
+    #logo {
+        width: 115px;
+    }
+    #marca {
+        font-size: 1.5em;
+    }
+}
+
+
+/*Desktop maior*/
+@media(min-width:1441px){
+    a.link-nav {
+        font-size: 1.7em;
+        margin: 0px 30px;
+    }
+    #logo {
+        width: 125px;
+    }
+    #marca {
+        font-size: 2em;
+    }
+
+}

@@ -1,0 +1,322 @@
+@charset "UTF-8";
+
+body{
+    background-color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex; /* fica flexivel na horizontal*/
+    align-items: center; /* centraliza os itens verticalmente */
+    justify-content: space-between; /*coloca espaço entre os itens do menu */
+    padding: 35px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to bottom, gray, white);
+    text-decoration: none; /* elimina a linha(sublinhado) embaixo do link */
+   
+}
+
+a.link-nav {
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0px auto;
+    font-weight: bolder;
+    text-decoration: none;
+    color: black;
+}
+
+a.link-nav:hover {
+    background-color: #CA0404;
+    color: white;
+    transition: 0.3s;
+}
+
+#botao_index {
+    border: none;
+    background-color: #c04c4c;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#botao_index:hover {
+    transition: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.74);
+}
+
+#imagem_academia {
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px rgba(141, 141, 141, 0.644);
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+    flex-grow: 1; /* itens crescerem igualmente dentro daquele espaço */
+    padding: 10px;
+}
+
+#planos {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 0;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+   
+}
+
+#input_index {
+    border-radius: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding-left: 40px;
+    
+}
+
+.barra{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+#proxima{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+         
+}
+
+#aca-img {
+    text-align: center;
+    flex-direction: column;
+}
+
+
+span{
+    color: #CA0404;
+}
+
+.plan{
+    width: 90%;
+    margin: 0px 20px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    border: 2px solid black;
+    box-shadow: 0 0 0 black;
+
+}
+
+.plan:hover {
+    transition: 0.3s;
+    transform: translateY(-5px);
+    box-shadow: 3px 3px 3px rgba(104, 104, 104, 0.74)
+}
+
+section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    margin:auto;
+    max-width: 1200px;
+    padding: 20px;
+    
+}
+
+
+.preço {
+    padding: 15px;
+    border-radius: 5px;
+} 
+
+.tipo_plano, .descricao {
+    font-size: 18px;
+}
+
+/*Celular*/
+@media(min-width:320px) and (max-width:500px) {
+    a.link-nav {
+        font-size: 1em;
+        margin: 0px 10px;
+    }
+    #logo {
+        width: 40px;
+    }
+    #marca {
+        font-size: 1em;
+    }
+    #proxima {
+        font-size: 1.3em;
+    }
+    #input_index {
+        width: 200px;
+        height: 17px;
+    }
+    #botao_index {
+        width: 70px;
+        height: 38px;
+    }
+    #imagem_academia {
+        width: 360px;
+    }
+    #planos_synergyfit {
+        font-size: 1.8em;
+    }
+
+    #titulo_planos, #span_planos {
+        font-size: 1em;
+    }
+
+    section {
+        flex-direction: column;
+        width: 340px;
+    }
+
+    .plan {
+        margin: 20px 10px;
+    }
+
+
+}
+
+/*Tablet*/
+@media(min-width:501px) and (max-width:767px) {
+    a.link-nav {
+        font-size: 1.2em;
+        margin: 0px 16px;
+    }
+    #logo {
+        width: 100px;
+    }
+    #marca {
+        font-size: 1.2em;
+    }
+    #proxima {
+        font-size: 1.5em;
+    }
+    #input_index {
+        width: 230px;
+        height: 23px;
+    }
+    #botao_index {
+        width: 80px;
+        height: 46px;
+    }
+    #imagem_academia {
+        width: 460px;
+    }
+    #planos_synergyfit {
+        font-size: 1.9em;
+    }
+    #titulo_planos, #span_planos {
+        font-size: 1.2em;
+    }
+
+    section {
+        flex-direction: column;
+        width: 360px;
+    }
+
+    .plan {
+        margin: 25px 15px;
+    }
+
+
+}
+
+/*Desktop menor*/
+@media(min-width:767px) and (max-width:1440px) {
+    a.link-nav {
+        font-size: 1.5em;
+        margin: 0px 20px;
+    }
+    #logo {
+        width: 115px;
+    }
+    #marca {
+        font-size: 1.5em;
+    }
+    #proxima {
+        font-size: 1.7em;
+    }
+    #input_index {
+        width: 380px;
+        height: 30px;
+    }
+    #botao_index {
+        width: 90px;
+        height: 52px;
+    }
+    #imagem_academia {
+        width: 560px;
+    }
+    #planos_synergyfit {
+        font-size: 2.1em;
+    }
+    #titulo_planos, #span_planos {
+        font-size: 1.1em;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .plan {
+        margin: 0px 15px;
+    }
+
+}
+
+
+/*Desktop maior*/
+@media(min-width:1441px){
+    a.link-nav {
+        font-size: 1.7em;
+        margin: 0px 30px;
+    }
+    #logo {
+        width: 125px;
+    }
+    #marca {
+        font-size: 2em;
+    }
+    #proxima {
+        font-size: 2.2em;
+    }
+
+    #input_index {
+        width: 500px;
+        height: 30px;
+    }
+    #botao_index {
+        width: 90px;
+        height: 52px;
+    }
+    #imagem_academia {
+        width: 800px;
+    }
+    #planos_synergyfit {
+        font-size: 2.3em;
+    }
+    #titulo_planos, #span_planos {
+        font-size: 1.2em;
+    }
+
+    section {
+        flex-direction: row;
+    }
+
+    .plan {
+        margin: 0px 25px;
+    }
+
+
+}
