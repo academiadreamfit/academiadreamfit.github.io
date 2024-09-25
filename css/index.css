@@ -14,7 +14,6 @@ body{
 header{
     display: flex; /* fica flexivel na horizontal*/
     align-items: center; /* centraliza os itens verticalmente */
-    justify-content: space-between; /*coloca espaço entre os itens do menu */
     padding: 35px 20px;
     margin-bottom: 15px;
     width: 100%;
@@ -157,7 +156,7 @@ section {
         font-size: 0.9em;
     }
     #proxima {
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     #input_index {
         width: 200px;

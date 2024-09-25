@@ -20,7 +20,6 @@ body{
 header{
     display: flex; /* fica flexivel na horizontal*/
     align-items: center; /* centraliza os itens verticalmente */
-    justify-content: space-between; /*coloca espaço entre os itens do menu */
     padding: 35px 20px;
     margin-bottom: 15px;
     width: 100%;
@@ -57,17 +56,91 @@ span{
     color: #CA0404;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(222, 222, 222);
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 4px 4px 3px rgba(143, 143, 143, 0.441);
+}
+
+.campo {
+    margin: 10px auto;
+}
+
+span{
+    color: #CA0404;
+}
+#titulo {
+    text-align: center;
+    text-shadow: 1px 0px 1px #CA0404;
+}
+label {
+    display: block;
+    text-align: center;
+}
+#label_check {
+    display: inline;
+}
+input[type='checkbox'] {
+    position: relative;
+    bottom: -4px;
+}
+#botao {
+    color: white;
+    background-color: #CA0404;
+    border: 1px solid;
+    width: 80px;
+    margin: 15px auto 0px auto;
+    border-radius: 8px;
+}
+#botao:hover {
+    background-color: #ff0000;
+    transition: 0.3s;
+    transform: translateY(-4px);
+    box-shadow: 2px 2px 3px rgb(110, 110, 110);
+}
+#botao:active {
+    border-color:  #0ae6ff;
+    transition: 0.3s;
+    transform: translateY(3px);
+}
+
+input {
+    border-radius: 15px;
+}
+
+input::placeholder {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+#resposta {
+    text-align: center;
+}
+
 /*Celular*/
 @media(min-width:320px) and (max-width:500px) {
     a.link-nav {
-        font-size: 0.8em;
+        font-size: 0.7em;
         margin: 0px 10px;
     }
     #logo {
-        width: 40px;
+        width: 36px;
     }
     #marca {
-        font-size: 1em;
+        font-size: 0.9em;
+    }
+    #titulo{
+        font-size: 1.6em;
+    }
+    form {
+        width: 350px;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 150px;
     }
 }
 
@@ -83,7 +156,16 @@ span{
     #marca {
         font-size: 1.2em;
     }
-
+    #titulo{
+        font-size: 1.7em;
+    }
+    form {
+        width: 390px;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 200px;
+        height: 25px;
+    }
 }
 
 /*Desktop menor*/
@@ -97,6 +179,16 @@ span{
     }
     #marca {
         font-size: 1.5em;
+    }
+    #titulo{
+        font-size: 1.9em;
+    }
+    form {
+        width: 470px;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 230px;
+        height: 25px;
     }
 }
 
@@ -112,6 +204,16 @@ span{
     }
     #marca {
         font-size: 2em;
+    }
+    #titulo{
+        font-size: 2.5em;
+    }
+    form {
+        width: 650px;
+    }
+    input[type='text'], input[type='date'], input[type='password'] {
+        width: 250px;
+        height: 25px;
     }
 
 }

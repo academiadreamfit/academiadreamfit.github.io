@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <script src="../script/cadastro.js"></script>
 </head>
-
+<body>
     <header>
 
         <a href="../index.html">
@@ -25,33 +24,38 @@
     </header> 
 
     <main>
-        <h1 id="titulo">Me matricular</h1>
+        <h1 id="titulo">Fazer meu cadastro</h1>
 
         <form>
 
             <div class="campo">
                 <label for="nome">Nome</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
             </div>
 
             <div class="campo">
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" placeholder="Digite seu email">
             </div>
 
             <div class="campo">
                 <label for="cpf/cnpj">CPF/CNPJ</label>
-                <input type="text" name="cpf/cnpj" id="cpf/cnpj">
+                <input type="text" name="cpf/cnpj" id="cpf_cnpj" placeholder="Digite seu CPF/CNPJ">
+            </div>
+
+            <div class="campo">
+                <label for="data">Data de nascimento</label>
+                <input type="date" name="data"  id="data">
             </div>
 
             <div class="campo">
                 <label for="senha">Senha</label>
-                <input type="text" name="senha" id="senha">
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
             </div>
 
             <div class="campo">
-                <label for="confirmar_senha">Confirmar Senha</label>
-                <input type="text" name="confirmar_senha"  id="conf_senha">
+                <label for="conf_senha">Confirmar Senha</label>
+                <input type="password" name="confirmar_senha"  id="conf_senha" placeholder="Digite sua senha">
             </div>
 
             <div class="campo">
@@ -59,13 +63,15 @@
                 <input type="checkbox" name="terms"  id="terms">
             </div>
 
-            <button id="botao">Cadastrar</button>
+            <input type="button" value="Cadastrar" id="botao">
 
             <p id="resposta"></p>
 
         </form>
 
     </main>
+
+    <script src="../script/cadastro.js"></script>
 
 </body>
 </html>
