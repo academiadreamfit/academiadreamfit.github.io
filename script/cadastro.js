@@ -5,7 +5,7 @@ async function cadastro(event) {
     event.preventDefault();
 
     // Obtém os valores dos inputs
-    const nome = document.getElementById('nome').value.trim();
+    const nome = document.getElementById('nome').value;
     const email = document.getElementById('email').value.trim();
     const cpfCnpj = document.getElementById('cpf_cnpj').value.trim();
     const dataNascimento = document.getElementById('data').value;
@@ -35,9 +35,9 @@ async function cadastro(event) {
     const anoNascimento = new Date(dataNascimento).getFullYear();
     const idade = dataAtual.getFullYear() - anoNascimento;
 
-    if (idade < 0 || idade > 90) {
+    if (idade < 0 || idade > 100) {
         resposta.style.color = 'red'
-        resposta.textContent = "A idade deve ser válida e não pode ultrapassar 90 anos!";
+        resposta.textContent = "A idade deve ser válida e não pode ultrapassar 100 anos!";
         return;
     }
 
@@ -56,33 +56,33 @@ async function cadastro(event) {
     resposta.style.color = 'green'
     resposta.textContent = "Cadastro realizado com sucesso!";
 
-    // Aqui você pode enviar os dados para o servidor, se necessário
+    // Api
 
-    let api = await
-
-    fetch(url, {
+    let api = await fetch(url,{
         method:"POST",
         body:JSON.stringify({
             "name":nome,
             "email":email,
             "user_type_id":1,
-            "password":senha,
+            "password": senha,
             "cpf_cnpj": cpfCnpj,
-            "terms":1,
-            "birthday": dataNascimento
+            "terms": 1,
+            "birthday":dataNascimento    
         }),
         headers:{
-            'Content-Type': 'aplication/json'
+            'Content-Type':'application/json'
         }
     });
 
     if(api.ok) {
         let resposta = await api.json();
+        alert('Usuario cadastrado')
         console.log(resposta);
         return;
     }
+
     let respostaErro = await api.json();
-    alert(respostaErro)
+    alert(respostaErro.data.errors.cpf_cnpj)
 
 }
 
